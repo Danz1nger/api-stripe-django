@@ -2,8 +2,11 @@
 Install the required packages:
 
 pip install djangorestframework
+
 pip install djangorestframework_simplejwt
+
 pip install django-environ
+
 pip install stripe
 
 With this setup, Django will use JWT tokens for authentication, and the client will be able to obtain a JWT token by sending a POST request to the authentication endpoint.
