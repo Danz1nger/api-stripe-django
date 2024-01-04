@@ -1,5 +1,5 @@
 # api-stripe-django
-Install the required packages:
+Установите необходимые пакеты:
 
 pip install djangorestframework
 
@@ -9,8 +9,8 @@ pip install django-environ
 
 pip install stripe
 
-Set up environment variables:
-Create a .env file in your project's root directory:
+Настройте переменные окружения:
+Создайте файл .env в корневом каталоге проекта:
 
 SECRET_KEY=<your_secret_key>
 
@@ -28,7 +28,7 @@ STRIPE_CURRENCY=<your_stripe_currency>
 
 STRIPE_CURRENCY_TWO=<your_second_stripe_currency>
 
-With this setup, Django will use JWT tokens for authentication, and the client will be able to obtain a JWT token by sending a POST request to the authentication endpoint.
-Users can obtain an access token by making a POST request to the /api/token/ endpoint and refresh their access token by making a POST request to the /api/token/refresh/ endpoint.
+При такой настройке Django будет использовать JWT-токены для аутентификации, а клиент сможет получить JWT-токен, отправив POST-запрос к конечной точке аутентификации.
+Пользователи могут получить токен доступа, сделав POST-запрос к конечной точке /api/token/, и обновить свой токен доступа, сделав POST-запрос к конечной точке /api/token/refresh/.
 
-You can further customize the authentication process and the endpoints by referring to the Django Rest Framework's Simple JWT documentation: https://django-rest-framework-simplejwt.readthedocs.io/en/latest/index.html
+Вы можете дополнительно настроить процесс аутентификации и конечные точки, обратившись к документации Django Rest Framework's Simple JWT: https://django-rest-framework-simplejwt.readthedocs.io/en/latest/index.html.
